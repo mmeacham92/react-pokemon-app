@@ -1,7 +1,7 @@
 const TypeButton = (props) => {
   return (
     <button
-      className="types__button"
+      className={`type__button ${props.name.toLowerCase()}__button`}
       onClick={() => {
         props.setSelectedType(props.name);
         props.setPokemonList(

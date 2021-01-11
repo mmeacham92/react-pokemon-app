@@ -14,6 +14,7 @@ const App = function () {
 
   return (
     <div className="container">
+      {/* <img src='./pokemonLogo.png' alt='' /> */}
       <ButtonsContainer
         types={types}
         selectedType={selectedType}
@@ -30,7 +31,6 @@ const App = function () {
         setSelectedType={setSelectedType}
       />
     </div>
-
   );
 };
 
