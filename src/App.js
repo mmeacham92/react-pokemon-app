@@ -1,26 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Pokemon from "./components/Pokemon";
-import { data } from "./data.js";
-import './styles/App.css';
+import PokemonContainer from "./components/PokemonContainer";
+import ButtonsContainer from "./components/ButtonsContainer";
 
+import { pokemonData } from "./data/pokemonData.js";
+import { types } from "./data/types.js";
+import "./styles/App.css";
 
 const App = function () {
-  const pokemonArray = data.map(pokemon => {
-    return <Pokemon
-        name={pokemon.name}
-        img_url={pokemon.art_url}
-        pkdx_id={pokemon.pkdx_id}
-        desc={pokemon.description}
-        evolves_to={pokemon.evolutions.to}
-        key={pokemon.pkdx_id}
-      />
-  });
+  const allPokemon = pokemonData.map((p) => p);
+  let [pokemonList, setPokemonList] = useState(allPokemon);
+  let [selectedType, setSelectedType] = useState("All");
 
   return (
-    <div className="pokemon__container">
-      {pokemonArray}
+    <div className="container">
+      <ButtonsContainer
+        types={types}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
+        allPokemon={allPokemon}
+        pokemonList={pokemonList}
+        setPokemonList={setPokemonList}
+      />
+      <PokemonContainer
+        allPokemon={allPokemon}
+        pokemonList={pokemonList}
+        setPokemonList={setPokemonList}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
+      />
     </div>
+
   );
 };
 

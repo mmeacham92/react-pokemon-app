@@ -1,4 +1,4 @@
-export const data = [
+export const pokemonData = [
   {
     _id: "557a723880a20c9db3bc31c2",
     pkdx_id: 1,
@@ -2545,3 +2545,4 @@ export const data = [
     evolutions: [],
   },
 ];
+
