@@ -3,7 +3,7 @@ import TypeButton from "./TypeButton";
 const ButtonsContainer = (props) => {
   const types = ["All", ...props.types.map((el) => el.name)];
 
-  const buttons = types.map((type) => {
+  const buttons = types.sort().map((type) => {
     return (
       <TypeButton
         name={type}

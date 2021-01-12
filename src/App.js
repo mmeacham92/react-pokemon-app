@@ -14,7 +14,7 @@ const App = function () {
 
   return (
     <div className="container">
-      {/* <img src='./pokemonLogo.png' alt='' /> */}
+      <img className='header__image' src='./src/pokemonLogo.png' alt=''></img>
       <ButtonsContainer
         types={types}
         selectedType={selectedType}
@@ -24,7 +24,6 @@ const App = function () {
         setPokemonList={setPokemonList}
       />
       <PokemonContainer
-        allPokemon={allPokemon}
         pokemonList={pokemonList}
         setPokemonList={setPokemonList}
         selectedType={selectedType}

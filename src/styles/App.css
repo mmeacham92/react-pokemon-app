@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -19,11 +23,15 @@
 .type__button {
     padding: 10px;
     min-width: 72px;
-    border: 1px solid black;
+    border: none;
+    border-radius: 5px;
+    margin: 1px;
+    font-family: inherit;
 }
 
 .type__button:hover {
     opacity: 60%;
+    /* border: 1px solid white; */
 }
 
 /* Colors for each type button */
