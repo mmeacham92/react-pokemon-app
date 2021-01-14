@@ -12,6 +12,7 @@ const ButtonsContainer = (props) => {
         pokemonList={props.pokemonList}
         setPokemonList={props.setPokemonList}
         allPokemon={props.allPokemon}
+        key={type}
       />
     );
   });

@@ -1,9 +1,6 @@
 import Pokemon from "./Pokemon";
 
 const PokemonContainer = (props) => {
-  // need to render all pokemon onto the page initially
-  // create Pokemon elements for every object
-
   const showThese = props.pokemonList.map((pokemon) => {
     return (
       <Pokemon
@@ -17,7 +14,6 @@ const PokemonContainer = (props) => {
     );
   });
 
-  console.log(props.pokemonList);
   return <div className="pokemon__container">{showThese}</div>;
 };
 

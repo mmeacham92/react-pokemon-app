@@ -1,161 +1,161 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons__container {
-    width: 80%;
-    /* flex-wrap: wrap; */
-    text-align: center;
+  width: 80%;
+  /* flex-wrap: wrap; */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .type__button {
-    padding: 10px;
-    min-width: 72px;
-    border: none;
-    border-radius: 5px;
-    margin: 1px;
-    font-family: inherit;
+  padding: 10px;
+  min-width: 72px;
+  border: none;
+  border-radius: 5px;
+  margin: 1px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
 }
 
 .type__button:hover {
-    opacity: 60%;
-    /* border: 1px solid white; */
+  opacity: 60%;
+  /* border: 1px solid white; */
 }
 
 /* Colors for each type button */
 .bug__button {
-    background-color: #A8B820;
+  background-color: #a8b820;
 }
 
 .dark__button {
-    background-color: #705848;
+  background-color: #705848;
 }
 
 .dragon__button {
-    background-color: #7038F8;
+  background-color: #7038f8;
 }
 
 .electric__button {
-    background-color: #F8D030;
+  background-color: #f8d030;
 }
 
 .fairy__button {
-    background-color: #EE99AC;
+  background-color: #ee99ac;
 }
 
 .fighting__button {
-    background-color: #C03028;
+  background-color: #c03028;
 }
 
 .fire__button {
-    background-color: #F08030;
+  background-color: #f08030;
 }
 
 .flying__button {
-    background-color: #A890F0;
+  background-color: #a890f0;
 }
 
 .ghost__button {
-    background-color: #705898;
+  background-color: #705898;
 }
 
 .grass__button {
-    background-color: #78C850;
+  background-color: #78c850;
 }
 
 .ground__button {
-    background-color: #E0C068;
+  background-color: #e0c068;
 }
 
 .ice__button {
-    background-color: #98D8D8;
+  background-color: #98d8d8;
 }
 
 .normal__button {
-    background-color: #A8A878;
+  background-color: #a8a878;
 }
 
 .poison__button {
-    background-color: #A040A0;
+  background-color: #a040a0;
 }
 
 .psychic__button {
-    background-color: #F85888;
+  background-color: #f85888;
 }
 
 .rock__button {
-    background-color: #B8A038;
+  background-color: #b8a038;
 }
 
 .steel__button {
-    background-color: #B8B8D0;
+  background-color: #b8b8d0;
 }
 
 .water__button {
-    background-color: #6890F0;
+  background-color: #6890f0;
 }
 /****************************/
 
-
 .pokemon__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
 }
 
 .pokemon {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border: solid 1px black;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    max-width: 30%;
-    min-width: 320px;
-    height: auto;
-    box-shadow: 1px 3px 3px black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid 1px black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  max-width: 30%;
+  min-width: 320px;
+  height: auto;
+  box-shadow: 1px 3px 3px black;
 }
 
 .pokemon:hover {
-    transform: scale(1.05);
-    background-color: lightblue;
+  transform: scale(1.05);
+  background-color: lightblue;
 }
 
 .pokemon__name {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .pokemon__desc {
-    line-height: 1.4rem;
+  line-height: 1.4rem;
 }
 
-
-
 .pokemon__image {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 @media (max-width: 1000px) {
-    .pokemon {
-        width: 40%;
-    }
+  .pokemon {
+    width: 40%;
+  }
 }
 
 /* @media (max-width: 600px) {

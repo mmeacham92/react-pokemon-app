@@ -14,7 +14,7 @@ const App = function () {
 
   return (
     <div className="container">
-      <img className='header__image' src='./src/pokemonLogo.png' alt=''></img>
+      <img className="header__image" src="./src/pokemonLogo.png" alt=""></img>
       <ButtonsContainer
         types={types}
         selectedType={selectedType}
